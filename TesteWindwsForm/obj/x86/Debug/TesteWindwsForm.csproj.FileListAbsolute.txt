@@ -1,0 +1,29 @@
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\bin\Debug\TesteWindwsForm.exe
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\bin\Debug\TesteWindwsForm.pdb
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadAutor.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadEditora.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadLivro.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadUsuario.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.TelaInicio.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.TelaSistema.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.exe
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.pdb
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.csprojResolveAssemblyReference.cache
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\bin\Debug\TesteWindwsForm.exe
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\bin\Debug\TesteWindwsForm.pdb
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadAutor.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadEditora.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.CadUsuario.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.TelaInicio.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.TelaSistema.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.exe
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\TesteWindwsForm.pdb
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.ConsultaEditora.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\obj\x86\Debug\WindowsFormsApplication1.Consultas.CadLivro.resources
+C:\Users\Alex\source\repos\TesteWindwsForm\TesteWindwsForm\bin\Debug\TesteWindwsForm.exe.config
