@@ -85,6 +85,7 @@
     <Compile Include="CadLivro.Designer.cs">
       <DependentUpon>CadLivro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Editora.cs" />
     <Compile Include="TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -23,6 +23,10 @@ namespace WindowsFormsApplication1
             c1.AdicionarAutor(txtAutorNome.Text, txtAutorSobren.Text);
 
             MessageBox.Show("Dados Gravados com Sucesso");
+
+            txtAutorNome.Clear();
+            txtAutorSobren.Clear();
+            this.Close();
         }
     }
 }

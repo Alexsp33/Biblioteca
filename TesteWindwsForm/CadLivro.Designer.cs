@@ -85,7 +85,6 @@
             this.cbAutor.Name = "cbAutor";
             this.cbAutor.Size = new System.Drawing.Size(324, 21);
             this.cbAutor.TabIndex = 13;
-            this.cbAutor.SelectedIndexChanged += new System.EventHandler(this.cbAutor_SelectedIndexChanged_1);
             // 
             // pictureBox1
             // 

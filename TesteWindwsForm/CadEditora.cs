@@ -85,35 +85,36 @@ namespace WindowsFormsApplication1
 
         private void btnConsultaEdit_Click(object sender, EventArgs e)
         {
-            ConsultaEditora ce = new ConsultaEditora();
-            ce.Show();
+            var consultaEditora = new ConsultaEditora();
+            consultaEditora.ShowDialog();
 
-            
-            string strSQL = "SELECT id_editora as 'ID EDITORA', nome_editora as 'NOME EDITORA', pais as 'PAÍS'  FROM editora";
+        //    ConsultaEditora ce = new ConsultaEditora();
+        //    ce.Show();
 
-            try
-            {
-                SqlConnection conn = new SqlConnection(conexao);
 
-                DataSet ds = new DataSet();
-                SqlDataAdapter da = new SqlDataAdapter(strSQL, conn);
+        //    string strSQL = "SELECT id_editora as 'ID EDITORA', nome_editora as 'NOME EDITORA', pais as 'PAÍS'  FROM editora";
 
-                conn.Open();
+        //    try
+        //    {
+        //        SqlConnection conn = new SqlConnection(conexao);
 
-                da.Fill(ds);
+        //        DataSet ds = new DataSet();
+        //        SqlDataAdapter da = new SqlDataAdapter(strSQL, conn);
 
-                
-                ce.dgvConsultaEdit.DataSource = ds.Tables[0];
+        //        conn.Open();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                
-            }
+        //        da.Fill(ds);
+
+        //        ce.dgvConsultaEdit.DataSource = ds.Tables[0];
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //    finally
+        //    {
+        //    }
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

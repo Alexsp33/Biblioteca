@@ -24,11 +24,6 @@ namespace WindowsFormsApplication1.Consultas
 
         private void CadLivro_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'bibliotecaDataSet1.autor'. Você pode movê-la ou removê-la conforme necessário.
-            this.autorTableAdapter.Fill(this.bibliotecaDataSet1.autor);
-            // TODO: esta linha de código carrega dados na tabela 'bibliotecaDataSet.autor'. Você pode movê-la ou removê-la conforme necessário.
-            this.autorTableAdapter.Fill(this.bibliotecaDataSet.autor);
-            txtIdLivro.Enabled = false;
         }
 
         private void cbAutor_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,22 +53,8 @@ namespace WindowsFormsApplication1.Consultas
 
         }
 
-        private void fillBy_autorToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.autorTableAdapter.FillBy_autor(this.bibliotecaDataSet.autor);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
         private void cbAutor_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            datatab
         }
     }
 }

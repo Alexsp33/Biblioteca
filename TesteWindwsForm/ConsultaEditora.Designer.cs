@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvConsultaEdit = new System.Windows.Forms.DataGridView();
             this.btnConsulSair = new System.Windows.Forms.Button();
+            this.bibliotecaDataSet = new WindowsFormsApplication1.BibliotecaDataSet();
+            this.bibliotecaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvConsultaEdit
@@ -51,6 +56,16 @@
             this.btnConsulSair.UseVisualStyleBackColor = true;
             this.btnConsulSair.Click += new System.EventHandler(this.btnConsulSair_Click);
             // 
+            // bibliotecaDataSet
+            // 
+            this.bibliotecaDataSet.DataSetName = "BibliotecaDataSet";
+            this.bibliotecaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bibliotecaDataSetBindingSource
+            // 
+            this.bibliotecaDataSetBindingSource.DataSource = this.bibliotecaDataSet;
+            this.bibliotecaDataSetBindingSource.Position = 0;
+            // 
             // ConsultaEditora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -61,6 +76,8 @@
             this.Name = "ConsultaEditora";
             this.Text = "ConsultaEditora";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -68,5 +85,7 @@
         #endregion
         private System.Windows.Forms.Button btnConsulSair;
         public System.Windows.Forms.DataGridView dgvConsultaEdit;
+        private BibliotecaDataSet bibliotecaDataSet;
+        private System.Windows.Forms.BindingSource bibliotecaDataSetBindingSource;
     }
 }

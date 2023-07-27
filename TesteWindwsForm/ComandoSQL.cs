@@ -6,28 +6,23 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.Common;
+using WindowsFormsApplication1.Models;
 
 namespace WindowsFormsApplication1
 {
-    class ComandoSQL
+    public class ComandoSQL
     {
-        private string strSQL = (@"Server=NOTE-DELL\AMGSQL;Database=Biblioteca;User Id=sa;Password=anz235..");
-
-
-
+        private string strSQL = (@"Server=amgsolutions.ddns.net,32544;Database=Biblioteca;User Id=sistema;Password=anz102030");
 
         public void AdicionarAutor(string autor, string sobrenome)
         {
             SqlConnection conn = new SqlConnection(strSQL);
 
-
             try
             {
-
-               
                 SqlCommand comando = new SqlCommand("INSERT INTO autor (nome_autor, sobrenome_autor) values (@autor, @sobrenome_autor)", conn);
                 comando.Parameters.AddWithValue("@autor", autor);
-                comando.Parameters.AddWithValue("@sobrenome_autor", sobrenome) ;
+                comando.Parameters.AddWithValue("@sobrenome_autor", sobrenome);
 
 
                 conn.Open();
@@ -43,10 +38,6 @@ namespace WindowsFormsApplication1
             {
                 conn.Close();
             }
-           
-           
-        
-        
         }
 
         public void AdicionarEditora(string nome_editora, string pais)
@@ -73,62 +64,53 @@ namespace WindowsFormsApplication1
             finally
             {
                 conn.Close();
-                
+
             }
         }
 
 
 
-        /* public DataSet ConsultaEditora()
+        public IEnumerable<Editora> ConsultaEditora()
         {
-            SqlConnection conn = new SqlConnection(strSQL);
-            string strSelect = "SELECT * FROM editora";
-            SqlDataAdapter da = new SqlDataAdapter(strSelect, strSQL);
+            var editoras = new List<Editora>();
 
-
-
-            try
+            using (var conn = new SqlConnection(strSQL))
             {
-                DataSet ds = new DataSet();
+                string strSelect = "SELECT * FROM editora";
+                SqlDataAdapter da = new SqlDataAdapter(strSelect, strSQL);
 
-                conn.Open();
+                try
+                {
+                    DataSet ds = new DataSet();
 
-                da.Fill(ds);
+                    conn.Open();
 
-                return ds;
+                    using (var reader = conn.CreateCommand().ExecuteReader())
+                    {
+                        while (!reader.Read())
+                            continue;
+
+                        var editora = new Editora
+                        {
+                            Id = (int)reader["Id"],
+                            Nome = (string)reader["Nome"],
+                            Pais = (string)reader["Pais"]
+                        };
+
+                        editoras.Add(editora);
+                    }
+
+                    return editoras;
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro na consulta: ", ex.Message);
+                    return null;
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro na consulta: ", ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-
-         }*/
-
-        /*public DataTable RetornaAutor()  //retorna autor para Combobox
-        {
-            SqlConnection conn = new SqlConnection(strSQL);
-
-            SqlDataAdapter da = new SqlDataAdapter("select sobrenome_autor, nome_autor from autor order by sobrenome_autor", conn);
-
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            return dt.
-
-
-
-            // Comandos para executar o data table
-            /*da.Fill(dt);
-            cbxparameter.DataSource = dt;
-            cbxparameter.DisplayMember = "ItemName";
-            cbxparameter.ValueMember = "ItemName";
-            */
+        }
 
         public void AtualizaEditora(int id_editora, string nome_editora, string pais)
         {
